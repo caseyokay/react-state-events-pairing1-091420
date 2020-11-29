@@ -8,7 +8,7 @@ class DogsList extends Component {
   }
 
   renderDogs = () => {
-    return this.state.api.map(dogObj => <DogCard key = {dogObj.id} dog = {dogObj}/>)
+    return this.state.api.map(dogObj => <DogCard key = {dogObj.id} dog = {dogObj} appClickHandler={this.props.appClickHandler}/>)
   }
 
   render() {
